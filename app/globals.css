@@ -2,26 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    /* Screns */
+    /* Colors */
+    /* Shadows */
+    --primary: rgba(45, 91, 255, 1);
+    --secundary: rgba(98, 132, 253, 1);
+    --tertiary: rgba(150, 173, 255, 1);
+    /* --quaternary
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    --hover
+    --click
+    --icon
+    --outline
+    --divider
+
+    --bg-light
+    --bg-dark
+    --bg-disabled
+
+    --text- */
+  }
+
+  .theme-violet {
+    --primary: rgba(175, 75, 254, 1);
+    --secundary: rgba(190, 116, 249, 1);
+  }
 }
